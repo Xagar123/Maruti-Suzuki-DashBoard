@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAD53E572B72BE2F00683FE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD53E562B72BE2F00683FE7 /* AppDelegate.swift */; };
+		FAD53E592B72BE2F00683FE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD53E582B72BE2F00683FE7 /* SceneDelegate.swift */; };
+		FAD53E5B2B72BE2F00683FE7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD53E5A2B72BE2F00683FE7 /* HomeViewController.swift */; };
+		FAD53E5E2B72BE2F00683FE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD53E5C2B72BE2F00683FE7 /* Main.storyboard */; };
+		FAD53E602B72BE3100683FE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD53E5F2B72BE3100683FE7 /* Assets.xcassets */; };
+		FAD53E632B72BE3100683FE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD53E612B72BE3100683FE7 /* LaunchScreen.storyboard */; };
+		FAD53E752B72BEF700683FE7 /* SmoothTabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD53E6E2B72BEF700683FE7 /* SmoothTabBarView.xib */; };
+		FAD53E762B72BEF700683FE7 /* SmoothTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD53E6F2B72BEF700683FE7 /* SmoothTabBarView.swift */; };
+		FAD53E772B72BEF700683FE7 /* SmoothTabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD53E712B72BEF700683FE7 /* SmoothTabItemView.swift */; };
+		FAD53E782B72BEF700683FE7 /* SmoothTabItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD53E722B72BEF700683FE7 /* SmoothTabItemView.xib */; };
+		FAD53E792B72BEF700683FE7 /* AppTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD53E742B72BEF700683FE7 /* AppTabBarViewController.swift */; };
+		FAD53E7F2B72BFC000683FE7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD53E7E2B72BFC000683FE7 /* SearchViewController.swift */; };
+		FAD53E812B72C14200683FE7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD53E802B72C14200683FE7 /* Extensions.swift */; };
+		FAD53E842B72D24C00683FE7 /* CalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD53E832B72D24C00683FE7 /* CalendarCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FAD53E532B72BE2F00683FE7 /* MarutiSuzuki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarutiSuzuki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD53E562B72BE2F00683FE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAD53E582B72BE2F00683FE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FAD53E5A2B72BE2F00683FE7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FAD53E5D2B72BE2F00683FE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAD53E5F2B72BE3100683FE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAD53E622B72BE3100683FE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAD53E642B72BE3100683FE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD53E6E2B72BEF700683FE7 /* SmoothTabBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SmoothTabBarView.xib; sourceTree = "<group>"; };
+		FAD53E6F2B72BEF700683FE7 /* SmoothTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothTabBarView.swift; sourceTree = "<group>"; };
+		FAD53E712B72BEF700683FE7 /* SmoothTabItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothTabItemView.swift; sourceTree = "<group>"; };
+		FAD53E722B72BEF700683FE7 /* SmoothTabItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SmoothTabItemView.xib; sourceTree = "<group>"; };
+		FAD53E742B72BEF700683FE7 /* AppTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTabBarViewController.swift; sourceTree = "<group>"; };
+		FAD53E7E2B72BFC000683FE7 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		FAD53E802B72C14200683FE7 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FAD53E832B72D24C00683FE7 /* CalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAD53E502B72BE2F00683FE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAD53E4A2B72BE2F00683FE7 = {
+			isa = PBXGroup;
+			children = (
+				FAD53E552B72BE2F00683FE7 /* MarutiSuzuki */,
+				FAD53E542B72BE2F00683FE7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAD53E542B72BE2F00683FE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAD53E532B72BE2F00683FE7 /* MarutiSuzuki.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAD53E552B72BE2F00683FE7 /* MarutiSuzuki */ = {
+			isa = PBXGroup;
+			children = (
+				FAD53E7A2B72BF0000683FE7 /* Helper */,
+				FAD53E802B72C14200683FE7 /* Extensions.swift */,
+				FAD53E6C2B72BEF700683FE7 /* Source */,
+				FAD53E7D2B72BF1D00683FE7 /* Model */,
+				FAD53E7C2B72BF1200683FE7 /* ViewModel */,
+				FAD53E7B2B72BF0800683FE7 /* View */,
+				FAD53E5C2B72BE2F00683FE7 /* Main.storyboard */,
+				FAD53E5F2B72BE3100683FE7 /* Assets.xcassets */,
+				FAD53E612B72BE3100683FE7 /* LaunchScreen.storyboard */,
+				FAD53E642B72BE3100683FE7 /* Info.plist */,
+			);
+			path = MarutiSuzuki;
+			sourceTree = "<group>";
+		};
+		FAD53E6C2B72BEF700683FE7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				FAD53E6D2B72BEF700683FE7 /* TabBarView */,
+				FAD53E702B72BEF700683FE7 /* TabItem */,
+				FAD53E732B72BEF700683FE7 /* TabBarController */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		FAD53E6D2B72BEF700683FE7 /* TabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				FAD53E6E2B72BEF700683FE7 /* SmoothTabBarView.xib */,
+				FAD53E6F2B72BEF700683FE7 /* SmoothTabBarView.swift */,
+			);
+			path = TabBarView;
+			sourceTree = "<group>";
+		};
+		FAD53E702B72BEF700683FE7 /* TabItem */ = {
+			isa = PBXGroup;
+			children = (
+				FAD53E712B72BEF700683FE7 /* SmoothTabItemView.swift */,
+				FAD53E722B72BEF700683FE7 /* SmoothTabItemView.xib */,
+			);
+			path = TabItem;
+			sourceTree = "<group>";
+		};
+		FAD53E732B72BEF700683FE7 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				FAD53E742B72BEF700683FE7 /* AppTabBarViewController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		FAD53E7A2B72BF0000683FE7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FAD53E562B72BE2F00683FE7 /* AppDelegate.swift */,
+				FAD53E582B72BE2F00683FE7 /* SceneDelegate.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		FAD53E7B2B72BF0800683FE7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAD53E822B72D22700683FE7 /* CustomCell */,
+				FAD53E5A2B72BE2F00683FE7 /* HomeViewController.swift */,
+				FAD53E7E2B72BFC000683FE7 /* SearchViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAD53E7C2B72BF1200683FE7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FAD53E7D2B72BF1D00683FE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAD53E822B72D22700683FE7 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				FAD53E832B72D24C00683FE7 /* CalendarCollectionViewCell.swift */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAD53E522B72BE2F00683FE7 /* MarutiSuzuki */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAD53E672B72BE3100683FE7 /* Build configuration list for PBXNativeTarget "MarutiSuzuki" */;
+			buildPhases = (
+				FAD53E4F2B72BE2F00683FE7 /* Sources */,
+				FAD53E502B72BE2F00683FE7 /* Frameworks */,
+				FAD53E512B72BE2F00683FE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarutiSuzuki;
+			productName = MarutiSuzuki;
+			productReference = FAD53E532B72BE2F00683FE7 /* MarutiSuzuki.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAD53E4B2B72BE2F00683FE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					FAD53E522B72BE2F00683FE7 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = FAD53E4E2B72BE2F00683FE7 /* Build configuration list for PBXProject "MarutiSuzuki" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAD53E4A2B72BE2F00683FE7;
+			productRefGroup = FAD53E542B72BE2F00683FE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAD53E522B72BE2F00683FE7 /* MarutiSuzuki */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAD53E512B72BE2F00683FE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD53E782B72BEF700683FE7 /* SmoothTabItemView.xib in Resources */,
+				FAD53E632B72BE3100683FE7 /* LaunchScreen.storyboard in Resources */,
+				FAD53E602B72BE3100683FE7 /* Assets.xcassets in Resources */,
+				FAD53E752B72BEF700683FE7 /* SmoothTabBarView.xib in Resources */,
+				FAD53E5E2B72BE2F00683FE7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAD53E4F2B72BE2F00683FE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD53E5B2B72BE2F00683FE7 /* HomeViewController.swift in Sources */,
+				FAD53E7F2B72BFC000683FE7 /* SearchViewController.swift in Sources */,
+				FAD53E572B72BE2F00683FE7 /* AppDelegate.swift in Sources */,
+				FAD53E812B72C14200683FE7 /* Extensions.swift in Sources */,
+				FAD53E772B72BEF700683FE7 /* SmoothTabItemView.swift in Sources */,
+				FAD53E762B72BEF700683FE7 /* SmoothTabBarView.swift in Sources */,
+				FAD53E842B72D24C00683FE7 /* CalendarCollectionViewCell.swift in Sources */,
+				FAD53E792B72BEF700683FE7 /* AppTabBarViewController.swift in Sources */,
+				FAD53E592B72BE2F00683FE7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FAD53E5C2B72BE2F00683FE7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAD53E5D2B72BE2F00683FE7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAD53E612B72BE3100683FE7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAD53E622B72BE3100683FE7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAD53E652B72BE3100683FE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAD53E662B72BE3100683FE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAD53E682B72BE3100683FE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4535RP9SVD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MarutiSuzuki/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sagar.com.MarutiSuzuki;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAD53E692B72BE3100683FE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4535RP9SVD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MarutiSuzuki/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sagar.com.MarutiSuzuki;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAD53E4E2B72BE2F00683FE7 /* Build configuration list for PBXProject "MarutiSuzuki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD53E652B72BE3100683FE7 /* Debug */,
+				FAD53E662B72BE3100683FE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAD53E672B72BE3100683FE7 /* Build configuration list for PBXNativeTarget "MarutiSuzuki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD53E682B72BE3100683FE7 /* Debug */,
+				FAD53E692B72BE3100683FE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAD53E4B2B72BE2F00683FE7 /* Project object */;
+}
