@@ -83,9 +83,9 @@ extension UIColor {
   }
   
   
-  static let themeColor = UIColor(hexString: "#FF0035")
-  static let themeFontColor = UIColor(hexString: "#212621")
-  static let themeFontLightColor = UIColor(hexString: "#8C98A9")
+  static let themeColor = UIColor(hexString: "#171C8F")
+  static let themeFontColor = UIColor(hexString: "#171C8F")
+  static let themeFontLightColor = UIColor(hexString: "#171C8F")
 }
 
 

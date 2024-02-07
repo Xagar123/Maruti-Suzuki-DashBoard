@@ -34,17 +34,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
       let v2 = SearchViewController()
 
-//      let v3 = HomeViewController()
+      let v3 = HomeViewController()
 //
 //      let v4 = HomeViewController()
 
       
-        let t1 = TabItem(v1, imageName: "house.fill", tabName: "home")
-        let t2 = TabItem(v2, imageName: "magnifyingglass.circle.fill", tabName: "Search")
-//      let t3 = TabItem(v3, imageName: "cart", selectedImage: nil, tabName: nil)
+        let t1 = TabItem(v1, imageName: "mingcute_task-line", tabName: "Test Drives")
+        let t2 = TabItem(v2, imageName: "car", tabName: "Search")
+        let t3 = TabItem(v3, imageName: "building", tabName: "")
 //      let t4 = TabItem(v4, imageName: "profile", selectedImage: nil, tabName: nil)
       
-      return [t1,t2]
+      return [t1,t2,t3]
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

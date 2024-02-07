@@ -56,6 +56,14 @@ class HomeViewController: UIViewController {
         return label
     }()
     
+    let tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.backgroundColor = .clear
+        tableView.separatorStyle = .none
+        return tableView
+    }()
+    
     //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -121,12 +129,30 @@ class HomeViewController: UIViewController {
             collectionView.trailingAnchor.constraint(equalTo: collectionViewContainer.trailingAnchor,constant: -20),
             collectionView.bottomAnchor.constraint(equalTo: collectionViewContainer.bottomAnchor)
         ])
+        
+        // Add tableView below collectionViewContainer
+        view.addSubview(tableView)
+        
+        // Add constraints for tableView
+        NSLayoutConstraint.activate([
+            tableView.topAnchor.constraint(equalTo: collectionViewContainer.bottomAnchor, constant: 10),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
+        
+        
         addShadow()
         // Register collection view cell
         collectionView.register(CalendarCollectionViewCell.self, forCellWithReuseIdentifier: "CalendarCell")
         
         collectionView.dataSource = self
         collectionView.delegate = self
+        
+        // Additional setup for the tableView
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.register(CustomTableViewCell.self, forCellReuseIdentifier: "CustomCell")
     }
     
     //MARK: - HELPER
@@ -202,4 +228,48 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     
 }
 
+extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // Return the number of rows you want to display in the table view
+        return 3 // Change this according to your requirement
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! CustomTableViewCell
+        
+        if indexPath.row == 0 {
+            cell.setImage(UIImage(named: "inProgress"))
+            cell.setText("IN PROGRESS")
+            cell.setTimeText("12:00 PM - 02:00PM")
+            cell.setSecondImage(UIImage(named: "line"))
+        } else if indexPath.row == 1 {
+            cell.setImage(UIImage(named: "upcomming"))
+            cell.setText("UPCOMING")
+            cell.setTimeText("12:00 PM - 02:00PM")
+            cell.label.textColor = .systemYellow
+            cell.timeLabel.textColor = .systemYellow
+            cell.setSecondImage(UIImage(named: "line"))
+        }else {
+            cell.setImage(UIImage(named: "SCHEDULED"))
+            cell.setText("SCHEDULED")
+            cell.setTimeText("12:00 PM - 02:00PM")
+            cell.label.textColor = .systemGray
+            cell.timeLabel.textColor = .systemGray
+            cell.setSecondImage(UIImage(named: "line"))
+        }
+        
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        // Return the height for each row
+        return 220 // Height of the custom table view cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // Handle row selection if needed
+    }
+}
 

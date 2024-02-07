@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FACE42182B73D4C1008FF1B4 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACE42172B73D4C1008FF1B4 /* CustomTableViewCell.swift */; };
 		FAD53E572B72BE2F00683FE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD53E562B72BE2F00683FE7 /* AppDelegate.swift */; };
 		FAD53E592B72BE2F00683FE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD53E582B72BE2F00683FE7 /* SceneDelegate.swift */; };
 		FAD53E5B2B72BE2F00683FE7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD53E5A2B72BE2F00683FE7 /* HomeViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FACE42172B73D4C1008FF1B4 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		FAD53E532B72BE2F00683FE7 /* MarutiSuzuki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarutiSuzuki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD53E562B72BE2F00683FE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD53E582B72BE2F00683FE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				FAD53E832B72D24C00683FE7 /* CalendarCollectionViewCell.swift */,
+				FACE42172B73D4C1008FF1B4 /* CustomTableViewCell.swift */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				FAD53E812B72C14200683FE7 /* Extensions.swift in Sources */,
 				FAD53E772B72BEF700683FE7 /* SmoothTabItemView.swift in Sources */,
 				FAD53E762B72BEF700683FE7 /* SmoothTabBarView.swift in Sources */,
+				FACE42182B73D4C1008FF1B4 /* CustomTableViewCell.swift in Sources */,
 				FAD53E842B72D24C00683FE7 /* CalendarCollectionViewCell.swift in Sources */,
 				FAD53E792B72BEF700683FE7 /* AppTabBarViewController.swift in Sources */,
 				FAD53E592B72BE2F00683FE7 /* SceneDelegate.swift in Sources */,

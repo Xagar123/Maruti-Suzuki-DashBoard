@@ -44,7 +44,7 @@ class TabItem {
   
   init(_ storyboardName: UIViewController, imageName: String,  tabName: String) {
     self.storyboardName = storyboardName
-    self.image = UIImage(systemName: imageName)
+    self.image = UIImage(named: imageName)
     self.tabName = tabName
   }
 }
